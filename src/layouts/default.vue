@@ -4,7 +4,9 @@
       <h1>Default Layout</h1>
       <router-link to="/member">to member layout</router-link>
     </nav>
-    <router-view></router-view>
+    <section>
+      <router-view></router-view>
+    </section>
   </main>
 </template>
 <style scoped>
@@ -18,5 +20,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+section {
+  padding: 2rem;
 }
 </style>
