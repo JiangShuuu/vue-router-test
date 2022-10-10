@@ -13,8 +13,29 @@ const router = createRouter({
       name: 'member',
       component: () => import('../views/member.vue'),
       meta: {
-        layout: 'member'
-      }
+        layout: 'member',
+        title: '會員專區'
+      },
+      children: [
+        {
+          path: '/member/info',
+          name: 'info',
+          component: () => import('../components/member/Info.vue'),
+          meta: { title: '會員資訊' }
+        },
+        {
+          path: '/member/account',
+          name: 'account',
+          component: () => import('../components/member/account.vue'),
+          meta: { title: '會員帳戶' }
+        },
+        {
+          path: '/member/payment',
+          name: 'payment',
+          component: () => import('../components/member/payment.vue'),
+          meta: { title: '會員支付' }
+        }
+      ]
     },
     {
       path: '/:pathMatch(.*)*',
