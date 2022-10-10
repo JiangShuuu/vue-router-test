@@ -1,3 +1,3 @@
 <template>
-  <h1>member account</h1>
+  <h3>member account</h3>
 </template>

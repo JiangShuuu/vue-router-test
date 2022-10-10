@@ -1,3 +1,3 @@
 <template>
-  <h1>member payment</h1>
+  <h3>member payment</h3>
 </template>
