@@ -2,11 +2,22 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(),
+  linkActiveClass: 'vue-active-link',
   routes: [
     {
       path: '/',
       name: 'home',
       component: () => import('../views/home.vue')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/about.vue')
+    },
+    {
+      path: '/discover',
+      name: 'discover',
+      component: () => import('../views/discover.vue')
     },
     {
       path: '/member',

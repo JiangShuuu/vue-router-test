@@ -16,6 +16,7 @@ const breadcrumbList = ref()
 watch(route, () => {
   getBreadcrumbs()
 })
+
 onMounted(() => {
   getBreadcrumbs()
 })

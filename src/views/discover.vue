@@ -1,0 +1,3 @@
+<template>
+  Discover Page
+</template>
